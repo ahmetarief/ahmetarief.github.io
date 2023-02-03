@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="You can contact me via the form below or via social media accounts.">
+    <title>Ahmet Arif AYDIN | Contact</title>
+    <link href="https://unpkg.com/normalize.css@^8.0.1" rel="stylesheet" />
+    <link href="https://unpkg.com/@blueprintjs/icons@^4.0.0/lib/css/blueprint-icons.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@blueprintjs/core@^4.0.0/lib/css/blueprint.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <nav class="bp4-navbar {{bp4-dark}}">
+            <div class="bp4-navbar-group bp4-align-left">
+                <div class="bp4-navbar-heading">Ahmet Arif AYDIN</div>
+            </div>
+            <div class="bp4-navbar-group bp4-align-right">
+                <button class="bp4-button bp4-minimal bp4-icon-home">Home</button>
+                <button class="bp4-button bp4-minimal bp4-icon-document">CV</button>
+                <button class="bp4-button bp4-minimal bp4-icon-git-repo"
+                    onclick="document.location='https://github.com/ahmetarief/ahmetarief-github.io'"></button>
+            </div>
+        </nav>
+    </div>
+    <div class="bp4-card {{.modifier}}" style="margin: 12px; width: auto;">
+        <h3>Contact me</h3>
+        <p>
+            You can contact me via the form below or via social media accounts.
+            <br>
+            I'm going to prepare my coffee.
+        </p>
+        <div class="bp4-callout {{.modifier}}">
+            <h5 class="bp4-heading">Social media</h5>
+            <a href="https://instagram.com/ahmetarief">Instagram</a><br>
+            <a href="https://twitter.com/ahmetarief">Twitter</a><br>
+            <a href="https://github.com/ahmetarief">GitHub</a><br>
+        </div>
+        <br>
+        <div class="bp4-callout bp4-icon-info-sign bp4-intent-success {{.modifier}}">
+            <h5 class="bp4-heading">Email</h5>
+            You can use the e-mail address <a href="mailto:ahmetarief@gmail.com">ahmetarief@gmail.com</a> to reach me
+            faster.
+        </div>
+        <br>
+        <div class="bp4-card {{.modifier}}">
+            <form action="" method="POST">
+                <h3>Form</h3>
+                <div>
+                    <label class="bp4-label {{.modifier}}">
+                        Enter your name & surname
+                        <span class="bp4-text-muted">*</span>
+                        <input class="bp4-input bp4-fill {{.modifier}}" {{:modifier}} type="text" placeholder="John Doe"
+                            dir="auto" name="Name & Surname" required />
+                    </label>
+                    <label class="bp4-label {{.modifier}}">
+                        Enter your email
+                        <span class="bp4-text-muted">*</span>
+                        <input class="bp4-input bp4-fill {{.modifier}}" {{:modifier}} type="text"
+                            placeholder="johndoe@email.com" dir="auto" name="Email" required />
+                    </label>
+                    <label class="bp4-label {{.modifier}}">
+                        Enter your subject
+                        <span class="bp4-text-muted">*</span>
+                        <input class="bp4-input bp4-fill {{.modifier}}" {{:modifier}} type="text" placeholder="Subject"
+                            dir="auto" name="Subject" required />
+                    </label>
+                    <label class="bp4-label {{.modifier}}">
+                        Enter your message
+                        <span class="bp4-text-muted">*</span>
+                        <textarea class="bp4-input bp4-fill {{.modifier}}" {{:modifier}} placeholder="Message"
+                            dir="auto" name="Message" required></textarea>
+                    </label>
+                    <button type="submit" class="bp4-button bp4-icon-send-message {{.modifier}}"
+                        {{:modifier}}>Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="bp4-card {{.modifier}}">
+        Copyright © 2023. All rights reserved.
+    </div>
+    <script src="https://unpkg.com/classnames@^2.2"></script>
+    <script src="https://unpkg.com/dom4@^2.1"></script>
+    <script src="https://unpkg.com/tslib@~2.3.1"></script>
+    <script src="https://unpkg.com/react@^16.14.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@^16.14.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-transition-group@^4.4.1/dist/react-transition-group.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@^2.5.4/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/react-popper@^2.2.4/dist/index.umd.min.js"></script>
+    <script src="https://unpkg.com/@blueprintjs/icons@^4.0.0"></script>
+    <script src="https://unpkg.com/@blueprintjs/core@^4.0.0"></script>
+</body>
+
+</html>
