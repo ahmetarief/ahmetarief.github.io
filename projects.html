@@ -3,49 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi 👋 I'm Ahmet Arif! I am a freelance web designer from Turkey.">
     <title>Ahmet Arif AYDIN | Projects</title>
-    <link href="https://unpkg.com/normalize.css@8.0.1/normalize.css" rel="stylesheet">
-    <link href="https://unpkg.com/@blueprintjs/icons@4.13.1/lib/css/blueprint-icons.css" rel="stylesheet">
-    <link href="https://unpkg.com/@blueprintjs/core@4.15.1/lib/css/blueprint.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="bp4-navbar">
-        <div class="bp4-navbar-group bp4-align-left">
-            <div class="bp4-navbar-heading">Ahmet Arif AYDIN</div>
-        </div>
-        <div class="bp4-navbar-group bp4-align-right">
-            <button class="bp4-button bp4-minimal bp4-icon-home" onclick="document.location='index.html'"
-                title="Home"></button>
-            <button class="bp4-button bp4-minimal bp4-icon-document" title="CV"></button>
-            <span class="bp4-navbar-divider"></span>
-            <button class="bp4-button bp4-minimal bp4-icon-projects" onclick="document.location='projects.html'"
-                title="Projects"></button>
-            <button class="bp4-button bp4-minimal bp4-icon-git-repo"
-                onclick="document.location='https://github.com/ahmetarief/ahmetarief.github.io'"
-                title="GitHub Repo"></button>
-            <button class="bp4-button bp4-minimal bp4-icon-send-message" onclick="document.location='contact.html'"
-                title="Contact"></button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ahmet Arif AYDIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/ahmetarief">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
 
-    <div class="bp4-card {{.modifier}}">
-        Copyright © 2023. All rights reserved.
+
+    <div class="card" style="border-radius: 0;">
+        <div class="card-body">
+            Copyright © 2023. All rights reserved.
+        </div>
     </div>
 
-    <script src="https://unpkg.com/classnames@2.3.2/index.js"></script>
-    <script src="https://unpkg.com/dom4@2.1.6/build/dom4.js"></script>
-    <script src="https://unpkg.com/tslib@~2.3.1"></script>
-    <script src="https://unpkg.com/react@16.14.0/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16.14.0/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/react-transition-group@4.4.5/dist/react-transition-group.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.js"></script>
-    <script src="https://unpkg.com/react-popper@2.3.0/dist/index.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
