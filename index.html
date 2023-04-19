@@ -3,109 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Hi 👋 I'm Ahmet Arif! I am a freelance web designer from Turkey.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmet Arif AYDIN | Home</title>
-    <link href="https://unpkg.com/normalize.css@8.0.1/normalize.css" rel="stylesheet">
-    <link href="https://unpkg.com/@blueprintjs/icons@4.13.1/lib/css/blueprint-icons.css" rel="stylesheet">
-    <link href="https://unpkg.com/@blueprintjs/core@4.15.1/lib/css/blueprint.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta name="description" content="Hi 👋 I'm Ahmet Arif! I am a freelance web designer from Turkey.">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
 </head>
 
 <body>
-    <nav class="bp4-navbar">
-        <div class="bp4-navbar-group bp4-align-left">
-            <div class="bp4-navbar-heading">Ahmet Arif AYDIN</div>
-        </div>
-        <div class="bp4-navbar-group bp4-align-right">
-            <button class="bp4-button bp4-minimal bp4-icon-home" onclick="document.location='index.html'"
-                title="Home"></button>
-            <button class="bp4-button bp4-minimal bp4-icon-document" title="CV"></button>
-            <span class="bp4-navbar-divider"></span>
-            <button class="bp4-button bp4-minimal bp4-icon-projects" onclick="document.location='projects.html'"
-                title="Projects"></button>
-            <button class="bp4-button bp4-minimal bp4-icon-git-repo"
-                onclick="document.location='https://github.com/ahmetarief/ahmetarief.github.io'"
-                title="GitHub Repo"></button>
-            <button class="bp4-button bp4-minimal bp4-icon-send-message" onclick="document.location='contact.html'"
-                title="Contact"></button>
-        </div>
-    </nav>
+    <div class="card" style="border-radius: 0;">
+        <nav class="navbar navbar-expand-lg bg-body-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Ahmet Arif AYDIN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="#">GitHub</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-    <div class="bp4-card {{.modifier}}" style="margin: 12px;">
-        <div class="bp4-running-text {{.modifier}}">
-            <h2>
+    <div class="card" style="border-radius: 0; margin: 12px;">
+        <div class="card-body">
+            <br>
+            <h4>
                 Hi 👋
                 <br>
-                I'm Ahmet Arif
-            </h2>
+                I'm Ahmet Arif!
+            </h4>
             <p>
                 I am a freelance web designer from Turkey.
                 <br>
                 Something is still missing in this portfolio, I will complete it as soon as possible.
             </p>
-
-            <div class="bp4-card {{.modifier}}">
-                <h3>My own competencies in programming languages;</h3>
-                <div>
-                    <div>
-                        <h4>HTML</h4>
-                        <div class="bp4-progress-bar {{.modifier}}">
-                            <div class="bp4-progress-meter" style="width: 99%"></div>
-                        </div>
+            <br>
+            <div class="card" style="border-radius: 0;">
+                <div class="card-body">
+                    <br>
+                    <h5>My own competencies in programming languages;</h5>
+                    <br>
+                    <h6>HTML & CSS</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="99"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 99%"></div>
                     </div>
-
-                    <div>
-                        <h4>CSS</h4>
-                        <div class="bp4-progress-bar {{.modifier}}">
-                            <div class="bp4-progress-meter" style="width: 99%"></div>
-                        </div>
+                    <br>
+                    <h6>JavaScript</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
                     </div>
-
-                    <div>
-                        <h4>Python</h4>
-                        <div class="bp4-progress-bar bp4-intent-warning {{.modifier}}">
-                            <div class="bp4-progress-meter" style="width: 90%"></div>
-                        </div>
+                    <br>
+                    <h6>Pyhon</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
                     </div>
-
-                    <div>
-                        <h4>JavaScript</h4>
-                        <div class="bp4-progress-bar bp4-intent-primary {{.modifier}}">
-                            <div class="bp4-progress-meter" style="width: 85%"></div>
-                        </div>
+                    <br>
+                    <h6>Ruby</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%"></div>
                     </div>
-
-                    <div>
-                        <h4>Ruby</h4>
-                        <div class="bp4-progress-bar bp4-intent-success {{.modifier}}">
-                            <div class="bp4-progress-meter" style="width: 80%"></div>
-                        </div>
+                    <br>
+                    <h6>php</h6>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 85%"></div>
                     </div>
-
-                    <div>
-                        <h4>PHP</h4>
-                        <div class="bp4-progress-bar bp4-intent-danger {{.modifier}}">
-                            <div class="bp4-progress-meter" style="width: 80%"></div>
-                        </div>
-                    </div>
+                    <br>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bp4-card {{.modifier}}">
-        Copyright © 2023. All rights reserved.
+    <div class="card" style="border-radius: 0;">
+        <div class="card-body">
+            Copyright © 2023. All rights reserved.
+        </div>
     </div>
 
-    <script src="https://unpkg.com/classnames@2.3.2/index.js"></script>
-    <script src="https://unpkg.com/dom4@2.1.6/build/dom4.js"></script>
-    <script src="https://unpkg.com/tslib@~2.3.1"></script>
-    <script src="https://unpkg.com/react@16.14.0/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16.14.0/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/react-transition-group@4.4.5/dist/react-transition-group.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.js"></script>
-    <script src="https://unpkg.com/react-popper@2.3.0/dist/index.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
